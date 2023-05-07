@@ -48,6 +48,7 @@ export function App() {
       setLoading(true);
 
       const newData = await getImage({ value, page: page + 1 });
+      console.log(newData);
       setData(prevData => [...prevData, ...newData.images]);
       setPage(prevPage => prevPage + 1);
       setLoading(false);
