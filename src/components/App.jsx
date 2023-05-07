@@ -41,7 +41,7 @@ export function App() {
     }
 
     fetchData();
-  }, [value]);
+  }, [value, page]);
 
   async function handleLoad() {
     try {
